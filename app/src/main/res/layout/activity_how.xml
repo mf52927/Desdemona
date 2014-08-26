@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.othello.desdemona.app.HowActivity">
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/help_button1"
+        android:ems="10"
+        android:text="-OBJECTIVE:
+The objective of this game is to have the most tiles of your color on the board by the end of the game. The game ends when there is no longer any space on the board to play a tile.
+
+\n\n-HOW TO PLAY A TILE:
+A tile can be placed anywhere that it will &apos;&apos;sandwich&apos;&apos; an opponent&apos;s tile between one of your existing tiles. Once one or more of the opposite are sandwiched, they are flipped and become yours! However, in such an instance where this cannot be done, it becomes your opponents turn."
+        android:textSize="16dp" >
+
+        <requestFocus />
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/help_button1"
+        android:layout_alignBottom="@+id/help_button1"
+        android:layout_centerHorizontal="true"
+        android:text="HOW TO PLAY"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/help_button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Back" />
+
+</RelativeLayout>
